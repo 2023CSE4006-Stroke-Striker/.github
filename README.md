@@ -1,6 +1,16 @@
 # Stroke Striker
 
+## Team members
 
+- Lee Seungsu, mqm0051@gmail.com
+
+- Park Geonryul, geonryul0131@gmail.com
+
+- Elia Ayoub, elia-ayoub@outlook.com
+
+- Ryan Jabbour, jabbourryan2@gmail.com
+
+  
 ## Getting Started
 
  Our model is an "active" stroke detector. 
@@ -12,15 +22,6 @@
   
   If stroke was detected, it informs the user right away.
 
-## Team
-
-Lee Seungsu, mqm0051@gmail.com
-
-Park Geonryul, geonryul0131@gmail.com
-
-Elia Ayoub, elia-ayoub@outlook.com
-
-Ryan Jabbour, jabbourryan2@gmail.com
 
 |    | Section                                       |
 |---:|:----------------------------------------------|
@@ -35,6 +36,16 @@ Ryan Jabbour, jabbourryan2@gmail.com
 ## I. Introduction
 
 ## II. Datasets
+
+To develop and train our model, we used a dataset from Kaggle. This dataset contains 5029 images categorized into two classes. One class represents individuals diagnosed with acute stroke, while the other class represents individuals without such a diagnosis. 
+
+To improve the model's accuracy, data augmentation techniques such as image flipping, rotation, and scaling were applied. These techniques contribute to creating a varied and resilient dataset, more reflective of real-world scenarios.
+
+The dataset provides a large and diverse collection of images for training machine learning models to detect and diagnose strokes in patients. 
+
+The augmentation techniques employed ensure that the model is exposed to a wide range of scenarios, improving its ability to generalize and make accurate predictions in real-world situations.
+
+
 
 ## III. Methodology
 

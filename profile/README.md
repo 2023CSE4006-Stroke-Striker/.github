@@ -53,6 +53,28 @@ The augmentation techniques employed ensure that the model is exposed to a wide 
 
 ## III. Methodology
 
+In order to create our stroke detector using an artificial intelligence model, we explored the capabilities of three machine learning algorithms—Random Forest, SVM, and ViT—each presenting unique methodologies and insights.
+
+- ### Random Forest
+
+    The first algorithm that we used was the Random Forest machine learning model in order to train our AI model. The process is divided into three parts. Firstly, loading and pre-processing face data of stroke patients and normal people. Secondly, loading and training the random forest model on the preprocessed data. Lastly, testing the trained model. 
+
+    Data preprocessing consists of loading an image from a folder and converting it to black and white. Since the color and expression of the image are independent, we proceed to reduce the dimension of the input. Since the size of the image data is different, we convert it to a size of (150, 150) and flatten it into a vector. The model is imported using scikit-learn’s library. The training data and testing data were divided into 80% and 20% and learned using the training data. This process took only a few minutes. Finally, the trained model is verified with testing data.
+
+    At this time, the performance of the stroke judgment model cannot be assured. Since it is a judgment of a person’s health, it must be precise, taking into consideration true positives and false negatives. To determine more accurate performances, we used the classification report function. What is important to note is that the stroke precision value is very high at 0.97; this means that if the model determines that the data indicates a stroke, there is a 97% probability that it is actually a stroke. On the other hand, stroke recall drops to 0.72, which means that 28% of cases were actually strokes, but the model failed to judge them as strokes.
+
+- ### SVM (Support Vector Machine)
+
+    The second algorithm that we used was to conduct learning based on Support Vector Machine. It is the same step-by-step process used in the Random Forest algorithm: data preprocessing, learning, and verification.
+
+    For data preprocessing, the color of the image was converted to black and white, the number of dimensions of the data was reduced, and the size was batch converted to (150, 150). The difference from the Random Forest algorithm in the image preprocessing process was that the number of training data is limited to 500. When the training was performed using all the data with Google Colab CPU, training did not end even after more than 5 hours. We judged that it would be unreasonable to use all the data for training, so we limited the number of data to 500.
+
+    Then, we loaded scikit-learn’s SVC and ran training. The training time, which consists of 80% training data and 20% testing data, is approximately 1 hour.
+
+    We used classification report to obtain detailed accuracy and obtained an accuracy of 88% in all cases. However, the amount of test data was very small, so it was difficult to interpret the results as meaningful, and learning was also difficult, so we started looking for a different model.
+
+    We saved the trained model using the joblib function, moved it to AWS Lightsail, and deployed it to a web server. At this time, the size of the model exceeded 200MB. This is also another reason we started looking for other models. 
+
 ## IV. Evaluation & Analysis
 
 ## V. Related Work

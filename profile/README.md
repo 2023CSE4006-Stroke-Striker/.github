@@ -229,4 +229,6 @@ Reference: Adrian Rosebrock. https://pyimagesearch.com/2017/04/03/facial-landmar
 
 This post explains line by line the source code provided and demonstrates in detail what are facial landmarks and how to detect them using dlib, OpenCV, and Python. Also, it introduces alternative facial landmark detectors such as ones coming from the MediaPipe library which is capable of computing a 3D face mesh.
 
-## V. Conclusion 
+## V. Conclusion
+
+Our project aimed to address the critical issue of stroke detection by developing an AI-powered system using facial expression analysis. Motivated by the importance of proactive healthcare and the time-sensitive nature of stroke intervention, we explored various machine learning algorithms, including Random Forest, SVM, and Vision Transformer, leveraging a dataset from Kaggle. While each algorithm had its merits and challenges, we ultimately found Amazon Rekognition to be a more efficient and accurate solution. Through this work, we envision a future where households actively safeguard health using integrated AI technologies, emphasizing the significance of early disease detection and prevention.

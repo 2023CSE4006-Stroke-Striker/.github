@@ -84,6 +84,7 @@ In order to create our stroke detector using an artificial intelligence model, w
     ```
     *Pre-processing data in Random Forest*
     ![Alt text](image.png)
+  
     *The result of testing Random Forest model*
 
 - ### SVM (Support Vector Machine)
@@ -124,6 +125,7 @@ In order to create our stroke detector using an artificial intelligence model, w
     ```
      *Pre-processing data in SVM model*
      ![Alt text](image-1.png)
+  
     *The result of testing SVM model*
 
 
@@ -139,6 +141,7 @@ In order to create our stroke detector using an artificial intelligence model, w
     After completing the implementation, testing was conducted. As a result of training with 5 epochs using Adam optimizer, the accuracy was about 66%. It showed the lowest accuracy; this can be inferred that sufficient learning has not occurred. ViT requires a lot of data, but it is difficult to obtain a sufficient amount of learning data because it is deeply related to patients’ medical information. Additionally, there is duplicated data as well as a lot of augmented data.
 
     ![Alt text](image-2.png)
+  
     *The result of testing ViT model*
    
     
@@ -150,22 +153,26 @@ After using all those training algorithms, we debated at the end that using Amaz
      The data needed for learning was the same as before. Amazon Rekogniton can automatically set the name of the folder containing the data as the label of the image. Using this function, we conveniently completed labeling the data and divided the training data and testing data in a ratio of 8:2. No work was done to change the color of the image to black and white or to unify the size of the image. 
 
      ![Alt text](image-3.png)
+   
      *Dataset for training Amazon Rekognition*
      
-2) **Training Rekognition model**: 
+3) **Training Rekognition model**: 
 
     Next step was training the Amazon Rekognition model with the data prepared above. Hyperparameters and those that need to be set additionally are automatically set and the optimal parameters are automatically found, so model training was performed immediately without setting the optimizer or parameters.
 
     ![Alt text](image-4.png)
+   
     *Training Amazon Rekognition automatically*
 
-3) **Testing and deploying trained model**: 
+5) **Testing and deploying trained model**: 
 
     Once training of the model is complete, you can test it and see the results of the performance of the learned model before deployment. All results were accurately classified on the test data; the F1 score obtained was 1. Also, the confidence level of each data was quite high, showing that the model was trained very well.
 
     ![Alt text](image-5.png)
+   
     *Result of testing trained Rekognition model*
     ![Alt text](image-6.png)
+   
     *Deploying trained Rekognition model*
 
 

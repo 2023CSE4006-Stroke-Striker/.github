@@ -73,7 +73,32 @@ In order to create our stroke detector using an artificial intelligence model, w
 
     We used classification report to obtain detailed accuracy and obtained an accuracy of 88% in all cases. However, the amount of test data was very small, so it was difficult to interpret the results as meaningful, and learning was also difficult, so we started looking for a different model.
 
-    We saved the trained model using the joblib function, moved it to AWS Lightsail, and deployed it to a web server. At this time, the size of the model exceeded 200MB. This is also another reason we started looking for other models. 
+    We saved the trained model using the joblib function, moved it to AWS Lightsail, and deployed it to a web server. At this time, the size of the model exceeded 200MB. This is also another reason we started looking for other models.
+
+- ### ViT (Vision Transformer)
+
+    The third algorithm we used was ViT which consists of several modules. The patchify module that flattens the image for recognition, the positional embedding module that implants the positional information from the original image into the patchified data, and the MSA module that performs multi-head self-attention, the most important task in ViT. These modules are assembled into a ViT class.
+
+    Since ViT was implemented based on pytorch, we directly implemented Dataset and Dataloader that can iterate on it. For consistency, we converted the images to black and white and resized them to (150, 150). The functions used are different, but the context is the same as the machine learning-based model above.
+
+    The detailed implementation of the most important MSA modules went as follows. First, we declare Q, K, and V matrices as Linear in pytorch as many as the number of heads to enable learning through back propagation. Then, the Q, K, and V dot products are performed on pre-given inputs to produce a result. These results are stacked in a stack format, and when all operations are completed, they are merged into the same dimension as the input and output. In other words, during the calculation process, the division is done by the number of heads and the calculation is carried out in parallel.
+
+    After completing the implementation, testing was conducted. As a result of training with 5 epochs using Adam optimizer, the accuracy was about 66%. It showed the lowest accuracy; this can be inferred that sufficient learning has not occurred. ViT requires a lot of data, but it is difficult to obtain a sufficient amount of learning data because it is deeply related to patients’ medical information. Additionally, there is duplicated data as well as a lot of augmented data.
+    
+After using all those training algorithms, we debated at the end that using Amazon Rekognition, a service for automatically training our AI model, would be an easier and more accurate choice to make.
+
+- ### Amazon Rekognition
+1) Preparing data:
+
+     The data needed for learning was the same as before. Amazon Rekogniton can automatically set the name of the folder containing the data as the label of the image. Using this function, we conveniently completed labeling the data and divided the training data and testing data in a ratio of 8:2. No work was done to change the color of the image to black and white or to unify the size of the image. 
+     
+2) Training Rekognition model: 
+
+    Next step was training the Amazon Rekognition model with the data prepared above. Hyperparameters and those that need to be set additionally are automatically set and the optimal parameters are automatically found, so model training was performed immediately without setting the optimizer or parameters.
+    
+3) Testing and deploying trained model: 
+
+    Once training of the model is complete, you can test it and see the results of the performance of the learned model before deployment. All results were accurately classified on the test data; the F1 score obtained was 1. Also, the confidence level of each data was quite high, showing that the model was trained very well.
 
 ## IV. Evaluation & Analysis
 

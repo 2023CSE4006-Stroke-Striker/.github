@@ -83,7 +83,9 @@ In order to create our stroke detector using an artificial intelligence model, w
     target = np.array(target_arr)
     ```
     *Pre-processing data in Random Forest*
-    ![Alt text](image.png)
+
+    <img width="700" alt="image" src="https://github.com/2023CSE4006-Stroke-Striker/.github/assets/116923946/63232228-b676-4ab2-9525-f82cc7e81cc8">
+  
     *The result of testing Random Forest model*
 
 - ### SVM (Support Vector Machine)
@@ -122,10 +124,11 @@ In order to create our stroke detector using an artificial intelligence model, w
     flat_data=np.array(flat_data_arr)
     target=np.array(target_arr)
     ```
-     *Pre-processing data in SVM model*
-     ![Alt text](image-1.png)
+      *Pre-processing data in SVM model*
+  
+    <img width="600" alt="image" src="https://github.com/2023CSE4006-Stroke-Striker/.github/assets/116923946/de2414e4-46f6-4081-9b4c-214275c06fcf">
+  
     *The result of testing SVM model*
-
 
 
 - ### ViT (Vision Transformer)
@@ -138,7 +141,8 @@ In order to create our stroke detector using an artificial intelligence model, w
 
     After completing the implementation, testing was conducted. As a result of training with 5 epochs using Adam optimizer, the accuracy was about 66%. It showed the lowest accuracy; this can be inferred that sufficient learning has not occurred. ViT requires a lot of data, but it is difficult to obtain a sufficient amount of learning data because it is deeply related to patients’ medical information. Additionally, there is duplicated data as well as a lot of augmented data.
 
-    ![Alt text](image-2.png)
+    <img width="700" alt="image" src="https://github.com/2023CSE4006-Stroke-Striker/.github/assets/116923946/dc61248f-06d4-4f76-ab4f-e0f0dd736d33">
+  
     *The result of testing ViT model*
    
     
@@ -149,23 +153,28 @@ After using all those training algorithms, we debated at the end that using Amaz
 
      The data needed for learning was the same as before. Amazon Rekogniton can automatically set the name of the folder containing the data as the label of the image. Using this function, we conveniently completed labeling the data and divided the training data and testing data in a ratio of 8:2. No work was done to change the color of the image to black and white or to unify the size of the image. 
 
-     ![Alt text](image-3.png)
+    <img width="400" alt="image" src="https://github.com/2023CSE4006-Stroke-Striker/.github/assets/116923946/7f969417-38e3-41c6-9828-df2bbc5eb451">
+   
      *Dataset for training Amazon Rekognition*
      
-2) **Training Rekognition model**: 
+3) **Training Rekognition model**: 
 
     Next step was training the Amazon Rekognition model with the data prepared above. Hyperparameters and those that need to be set additionally are automatically set and the optimal parameters are automatically found, so model training was performed immediately without setting the optimizer or parameters.
 
-    ![Alt text](image-4.png)
+    <img width="700" alt="image" src="https://github.com/2023CSE4006-Stroke-Striker/.github/assets/116923946/80d7d874-4c13-4004-ab61-c86d5c9e88f1">
+   
     *Training Amazon Rekognition automatically*
 
-3) **Testing and deploying trained model**: 
+5) **Testing and deploying trained model**: 
 
     Once training of the model is complete, you can test it and see the results of the performance of the learned model before deployment. All results were accurately classified on the test data; the F1 score obtained was 1. Also, the confidence level of each data was quite high, showing that the model was trained very well.
 
-    ![Alt text](image-5.png)
+    <img width="700" alt="image" src="https://github.com/2023CSE4006-Stroke-Striker/.github/assets/116923946/64c26fc9-b928-4d9d-8384-0d4706f7cd76">
+   
     *Result of testing trained Rekognition model*
-    ![Alt text](image-6.png)
+   
+    <img width="700" alt="image" src="https://github.com/2023CSE4006-Stroke-Striker/.github/assets/116923946/6ae8d92e-42b3-4eb9-9ec0-f56f51d0ba35">
+   
     *Deploying trained Rekognition model*
 
 
@@ -222,4 +231,6 @@ Reference: Adrian Rosebrock. https://pyimagesearch.com/2017/04/03/facial-landmar
 
 This post explains line by line the source code provided and demonstrates in detail what are facial landmarks and how to detect them using dlib, OpenCV, and Python. Also, it introduces alternative facial landmark detectors such as ones coming from the MediaPipe library which is capable of computing a 3D face mesh.
 
-## V. Conclusion 
+## V. Conclusion
+
+Our project aimed to address the critical issue of stroke detection by developing an AI-powered system using facial expression analysis. Motivated by the importance of proactive healthcare and the time-sensitive nature of stroke intervention, we explored various machine learning algorithms, including Random Forest, SVM, and Vision Transformer, leveraging a dataset from Kaggle. While each algorithm had its merits and challenges, we ultimately found Amazon Rekognition to be a more efficient and accurate solution. Through this work, we envision a future where households actively safeguard health using integrated AI technologies, emphasizing the significance of early disease detection and prevention.

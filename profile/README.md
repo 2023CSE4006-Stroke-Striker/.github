@@ -4,7 +4,7 @@
 
 Check out the project documentation in the `Documentation` folder:
 
-- [Download PPT](2023CSE4006-Stroke-Striker/Documentation/Strike-Stroke-ppt-Ver4.1.key)
+- [Download PPT](/../Documentation/Strike-Stroke-ppt-Ver4.1.key)
 
 ## Team
 

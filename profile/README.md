@@ -1,5 +1,11 @@
 # Stroke Striker
 
+# PPT file
+
+Check out the project documentation in the `docs` folder:
+
+- [Download PPT](Documentation/Strike-Stroke-ppt-Ver4.1.key)
+
 ## Team
 
 - Lee Seungsu, mqm0051@gmail.com

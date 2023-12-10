@@ -1,10 +1,10 @@
 # Stroke Striker
 
-# PPT file
+## PPT file
 
-Check out the project documentation in the `docs` folder:
+Check out the project documentation in the `Documentation` folder:
 
-- [Download PPT](Documentation/Strike-Stroke-ppt-Ver4.1.key)
+- [Download PPT](Strike-Stroke-ppt-Ver4.1.key)
 
 ## Team
 

@@ -1,5 +1,8 @@
 # Stroke Striker
 
+##Demo Video
+[[![Alt text](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)](https://youtu.be/XglI0ev_tus?si=n1lzYkUqclIFyTIm)
+
 ## PPT file
 
 Check out the project documentation in the `Documentation` folder:

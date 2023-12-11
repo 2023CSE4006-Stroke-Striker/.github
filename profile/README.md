@@ -7,9 +7,8 @@
 
 ## PPT file
 
-Check out the project documentation in the `Documentation` folder:
-
-- [Download PPT](https://github.com/2023CSE4006-Stroke-Striker/.github/blob/main/profile/Strike-Stroke-ppt-Ver4.1.key)
+- [Download PPT for keynote file](https://github.com/2023CSE4006-Stroke-Striker/.github/blob/main/profile/Strike-Stroke-ppt-Ver4.1.key)
+- [Download PPT for pptx file]()
 
 ## Team
 

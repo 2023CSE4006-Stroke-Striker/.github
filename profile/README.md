@@ -1,7 +1,7 @@
 # Stroke Striker
 
 ## Demo Video
-[![Alt text](https://github.com/2023CSE4006-Stroke-Striker/.github/assets/55689484/62cfdd56-ac50-45da-8c39-019202f719d9)](https://www.youtube.com/watch?v=XglI0ev_tus&t=20)
+[![Alt text](https://github.com/2023CSE4006-Stroke-Striker/.github/assets/55689484/62cfdd56-ac50-45da-8c39-019202f719d9)](https://www.youtube.com/watch?v=XglI0ev_tus&t=20){:width="300px"}
 
 
 

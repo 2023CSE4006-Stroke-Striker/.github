@@ -1,10 +1,15 @@
 # Stroke Striker
 
-하루에 한번쯤은 냉장고를 열어보는 우리의 습관에 AI 기술을 결합한 실시간 능동적 뇌졸중 탐지기
+_**하루에 한번쯤은 냉장고를 열어보는 우리의 습관에 AI 기술을 결합한 실시간 능동적 뇌졸중 탐지기**_
 
 ## Demo Video
 [![Alt text](https://github.com/2023CSE4006-Stroke-Striker/.github/assets/55689484/62cfdd56-ac50-45da-8c39-019202f719d9)](https://www.youtube.com/watch?v=XglI0ev_tus&t=20)
 
+## Repository
+
+- Trigger Part (on Raspberry pi)(https://github.com/2023CSE4006-Stroke-Striker/Raspberry)
+- AI Part (https://github.com/2023CSE4006-Stroke-Striker/AI-back)
+- Document (https://github.com/2023CSE4006-Stroke-Striker/Documentation)
 
 
 ## PPT file

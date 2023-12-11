@@ -3,8 +3,6 @@
 ## Demo Video
 [![Alt text](https://github.com/2023CSE4006-Stroke-Striker/.github/assets/55689484/62cfdd56-ac50-45da-8c39-019202f719d9)](https://www.youtube.com/watch?v=XglI0ev_tus&t=20)
 
-<img width="666" alt="스크린샷 2023-12-11 오후 6 11 59" src="https://github.com/2023CSE4006-Stroke-Striker/.github/assets/55689484/62cfdd56-ac50-45da-8c39-019202f719d9">
-
 
 
 ## PPT file

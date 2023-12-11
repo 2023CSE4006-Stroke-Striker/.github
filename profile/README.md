@@ -1,7 +1,7 @@
 # Stroke Striker
 
 ## Demo Video
-[![Alt text](https://img.youtube.com/vi/XglI0ev_tus&t=20.jpg)](https://www.youtube.com/watch?v=XglI0ev_tus&t=20)
+[![Alt text](https://img.youtube.com/vi/XglI0ev_tus&t=20/1.jpg)](https://www.youtube.com/watch?v=XglI0ev_tus&t=20)
 
 
 ## PPT file

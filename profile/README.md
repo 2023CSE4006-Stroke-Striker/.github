@@ -9,7 +9,7 @@
 
 Check out the project documentation in the `Documentation` folder:
 
-- [Download PPT](Strike-Stroke-ppt-Ver4.1.key)
+- [Download PPT](https://github.com/2023CSE4006-Stroke-Striker/.github/blob/main/profile/Strike-Stroke-ppt-Ver4.1.key)
 
 ## Team
 

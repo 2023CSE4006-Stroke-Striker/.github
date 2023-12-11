@@ -7,8 +7,8 @@
 
 ## PPT file
 
-- [Download PPT for keynote file](https://github.com/2023CSE4006-Stroke-Striker/.github/blob/main/profile/Strike-Stroke-ppt-Ver4.1.key)
-- [Download PPT for pptx file]()
+- [Download PPT for keynote file (This is original)](https://github.com/2023CSE4006-Stroke-Striker/.github/blob/main/profile/Strike-Stroke-ppt.key)
+- [Download PPT for pptx file](https://github.com/2023CSE4006-Stroke-Striker/.github/blob/main/profile/Strike-Stroke-ppt.pptx)
 
 ## Team
 

@@ -15,7 +15,7 @@
 
 ## PPT file
 
-You can download ppt file. The keynote file is original file. Please click 'view raw' to download it.
+The keynote file is original file. Please click 'View raw' to download the file after click below.
 
 - [Download PPT for keynote file](https://github.com/2023CSE4006-Stroke-Striker/.github/blob/main/profile/Strike-Stroke-ppt.key)
 - [Download PPT for pptx file](https://github.com/2023CSE4006-Stroke-Striker/.github/blob/main/profile/Strike-Stroke-ppt.pptx)
